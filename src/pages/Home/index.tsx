@@ -1,10 +1,11 @@
 import React from "react";
 import { AddTodo } from "../../component/AddTodo";
+import { Box } from "@mui/material";
 
 export const Home = () => {
   return (
-    <div>
+    <Box margin={2}>
       <AddTodo />
-    </div>
+    </Box>
   );
 };
