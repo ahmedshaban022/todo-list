@@ -7,15 +7,19 @@ import TodoItem from "./component/TodoItem";
 import { Toaster } from "react-hot-toast";
 import { Home } from "./pages/Home";
 import { Header } from "./component/Header";
+import { AnimatedBackGround } from "./component/AnimatedBackGround";
 
 function App() {
   return (
-    <Container>
-      <Header />
+    <>
+      <AnimatedBackGround />
+      <Container>
+        <Header />
 
-      <Home />
-      <Toaster position="top-center" reverseOrder={false} />
-    </Container>
+        <Home />
+        <Toaster position="top-center" reverseOrder={false} />
+      </Container>
+    </>
   );
 }
 
