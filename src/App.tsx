@@ -8,11 +8,13 @@ import { Toaster } from "react-hot-toast";
 import { Home } from "./pages/Home";
 import { Header } from "./component/Header";
 import { AnimatedBackGround } from "./component/AnimatedBackGround";
+import { AnimatedBackGroundSquares } from "./component/AnimatedBackGroundSquares";
 
 function App() {
   return (
     <>
-      <AnimatedBackGround />
+      {/* <AnimatedBackGround /> */}
+      <AnimatedBackGroundSquares />
       <Container>
         <Header />
 

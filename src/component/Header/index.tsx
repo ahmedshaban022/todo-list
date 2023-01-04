@@ -3,7 +3,7 @@ import React from "react";
 
 export const Header = () => {
   return (
-    <Box>
+    <Box p={2} sx={{ fontSize: "1.5rem", color: "white" }}>
       <h2>Todo-List</h2>
       <Divider />
     </Box>
