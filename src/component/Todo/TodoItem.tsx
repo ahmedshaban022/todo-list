@@ -3,7 +3,7 @@ import React from "react";
 
 interface TodoProps {
   title: string;
-  description: string;
+  description?: string;
 }
 
 const TodoItem: React.FC<TodoProps> = ({ title, description }) => {
@@ -22,9 +22,11 @@ const TodoItem: React.FC<TodoProps> = ({ title, description }) => {
         <Typography variant="h5" component="h2" sx={styles.title}>
           {title}
         </Typography>
-        <Typography variant="body2" component="p">
-          {description}
-        </Typography>
+        {description && (
+          <Typography variant="body2" component="p">
+            {description}
+          </Typography>
+        )}
       </CardContent>
     </Card>
   );

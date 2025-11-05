@@ -8,10 +8,11 @@ import { Home } from "./pages/Home";
 import { Header } from "./component/Header";
 import { AnimatedBackGround } from "./component/AnimatedBackGround";
 import { AnimatedBackGroundSquares } from "./component/AnimatedBackGroundSquares";
+import { TodosProvider } from "./context/TodosContext";
 
 function App() {
   return (
-    <>
+    <TodosProvider>
       {/* <AnimatedBackGround /> */}
       <AnimatedBackGroundSquares />
       <Container>
@@ -20,7 +21,7 @@ function App() {
         <Home />
         <Toaster position="top-center" reverseOrder={false} />
       </Container>
-    </>
+    </TodosProvider>
   );
 }
 
